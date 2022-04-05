@@ -1,0 +1,72 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: "Merriweather", "Times New Roman", Times, serif;
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: #C9C9C9;
+}
+
+main {
+    background-color: #F3F3F3;
+    margin-top: 2%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #477ca7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    min-height: 450px;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+
+}
+
+figure {
+    max-width: 75%;
+    background-color: #fff;
+    border: 25px solid #fff;
+    transform: rotate(2deg);
+    margin: 0 auto;
+    align-self: start;
+}
+
+figcaption {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 460px) {
+    img {
+        margin: 0;
+    }
+}
+
+#title {
+    font-weight: 900;
+    font-size: 4rem;
+}
