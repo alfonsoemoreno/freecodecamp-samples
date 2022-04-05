@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">The Beatles - Encuesta</h1>
+            <p id="description">Si te gustan los Beatles por favor llena este formulario de encuesta</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Ingrese su email"
+                        required />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Edad</label>
+                    <input type="number" name="edad" id="number" class="form-control" min=10 max=99
+                        placeholder="Edad" />
+                </div>
+                <div class="form-group">
+                    <p>¿Cual es tu Beatle favorito?</p>
+                    <select id="dropdown" name="favorite-beatle" class="form-control" required>
+                        <option disabled selected value>Selecciona a tu Beatle favorito</option>
+                        <option value="paul">Paul McCartney</option>
+                        <option value="john">John Lennon</option>
+                        <option value="george">George Harrison</option>
+                        <option value="ringo">Ringo Starr</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>¿Que tipo de masterización te gusta más?</p>
+                    <label>
+                        <input type="radio" name="type-master" value="mono" class="input-radio" checked />Mono
+                    </label>
+                    <label>
+                        <input type="radio" name="type-master" value="stereo" class="input-radio" />Stereo
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>¿Que discos consideras esenciales?
+                        <span class="pista">*Selecciona todos los que prefieras</span>
+                    </p>
+                    <label>
+                        <input name="esencial" value="please-please-me" class="input-checkbox" type="checkbox" />Please
+                        Please Me
+                    </label>
+                    <label>
+                        <input name="esencial" value="with-the-beatles" class="input-checkbox" type="checkbox" />With
+                        The Beatles
+                    </label>
+                    <label>
+                        <input name="esencial" value="a-hard-days-night" class="input-checkbox" type="checkbox" />A Hard
+                        Day's Night
+                    </label>
+                    <label>
+                        <input name="esencial" value="beatles-for-sale" class="input-checkbox" type="checkbox" />Beatles
+                        For Sale
+                    </label>
+                    <label>
+                        <input name="esencial" value="help" class="input-checkbox" type="checkbox" />Help
+                    </label>
+                    <label>
+                        <input name="esencial" value="rubber-soul" class="input-checkbox" type="checkbox" />Rubber Soul
+                    </label>
+                    <label>
+                        <input name="esencial" value="revolver" class="input-checkbox" type="checkbox" />Revolver
+                    </label>
+                    <label>
+                        <input name="esencial" value="sgt-pepper" class="input-checkbox" type="checkbox" />Sgt. Pepper's
+                        Lonely Hearts Club Band
+                    </label>
+                    <label>
+                        <input name="esencial" value="magical-mystery-tour" class="input-checkbox"
+                            type="checkbox" />Magical Mystery Tour
+                    </label>
+                    <label>
+                        <input name="esencial" value="white-album" class="input-checkbox" type="checkbox" />The Beatles
+                        (White Album)
+                    </label>
+                    <label>
+                        <input name="esencial" value="yellow-submarine" class="input-checkbox" type="checkbox" />Yellow
+                        Submarine
+                    </label>
+                    <label>
+                        <input name="esencial" value="abbey-road" class="input-checkbox" type="checkbox" />Abbey Road
+                    </label>
+                    <input name="esencial" value="let-it-be" class="input-checkbox" type="checkbox" />Let It Be
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Cuéntanos... ¿Qué es lo que más te gusta de The Beatles?</p>
+                    <textarea id="comentarios-finales" class="input-textarea" name="comentarios"
+                        placeholder="Cuentanos lo que más te guste de The Beatles..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button" />Enviar</button>
+                </div>
+            </form>
+        </header>
+    </div>
+
+</body>
+
+</html>
